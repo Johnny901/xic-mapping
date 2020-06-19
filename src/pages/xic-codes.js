@@ -11,6 +11,12 @@ export default function XicCodes() {
         return _.isEmpty(_.get(xic, 'parent_ids', []));
     });
 
+    const childrenFor = (parentID) => {
+        return _.filter(XicData, (xic) => {
+            return _.indexOf(_.get(xic, 'parent_ids', []), parentID) > 0;
+        });
+    }
+
     return (
         <div>
             <h1>
@@ -25,8 +31,19 @@ export default function XicCodes() {
                 {
                     _.map(roots, (root) => {
                         return (
-                            <li>
+                            <li key={root.id}>
                                 { _.get(root, 'name.en', 'UNKNOWN') }
+
+                                <ul>
+                                    {
+                                        _.map(childrenFor(root.id), (child) => (
+                                                <li>
+                                                    { _.get(child, 'name.en', 'UNKNOWN') }
+                                                </li>
+                                            )
+                                        )
+                                    }
+                                </ul>
                             </li>
                         )
                     })
