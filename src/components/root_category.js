@@ -10,15 +10,40 @@ const useStyles = makeStyles((theme) => ({
   rootXic: {
     marginTop: 25,
     cursor: "pointer",
-    width: "50%",
+    width: "90%",
+    border: "1px solid #ddd",
+    color: "#666666",
+    borderRadius: "2px",
+    margin: "auto",
 
     "& .MuiTypography-root": {
       fontWeight: "bold",
+      color: "#666666",
+      fontFamily: "Calibri",
+      fontSize: "18px",
     },
   },
 
   childXic: {
     paddingLeft: theme.spacing(6),
+    width: "90%",
+    margin: "auto",
+
+    "& .MuiListItemText-root": {
+      color: "#666666",
+      fontFamily: "Calibri Light",
+      borderLeft: "1px solid",
+    },
+    "& .MuiListItemText-primary": {
+      fontSize: "14px",
+      marginLeft: "10px",
+    },
+    "& .MuiListItemText-secondary": {
+      fontStyle: "Italic",
+      fontWeight: "light",
+      fontSize: "14px",
+      marginLeft: "10px",
+    },
   },
 }));
 
@@ -44,7 +69,7 @@ export default function RootCategory(props) {
   };
 
   return (
-    <React.Fragment>
+    <React.Fragment className={classes.reactFrag}>
       <ListItem
         button
         className={classes.rootXic}
@@ -62,7 +87,7 @@ export default function RootCategory(props) {
             <ListItem button key={child.id} className={classes.childXic}>
               <ListItemText
                 primary={_.get(child, "name.en", "UNKNOWN")}
-                secondary={_.join(_.get(child, "sic_codes", []), " + ")}
+                secondary={_.join(_.get(child, "sic_codes", []), " , ")}
               />
             </ListItem>
           ))}
