@@ -48,6 +48,8 @@ const useStyles = makeStyles((theme) => ({
 
   childSic2007: {
     paddingLeft: theme.spacing(8),
+    width: "75%",
+    margin: "auto",
 
     "& .MuiListItemText-primary": {
       fontStyle: "italic",
