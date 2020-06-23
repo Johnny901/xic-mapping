@@ -30,12 +30,11 @@ const useStyles = makeStyles((theme) => ({
     margin: "auto",
 
     "& .MuiListItemText-root": {
-      color: "#666666",
-      fontFamily: "Calibri Light",
+      fontFamily: "Calibri",
       borderLeft: "1px solid",
     },
     "& .MuiListItemText-primary": {
-      fontSize: "14px",
+      fontSize: "15px",
       marginLeft: "10px",
     },
     "& .MuiListItemText-secondary": {
@@ -50,9 +49,18 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: theme.spacing(8),
     width: "75%",
     margin: "auto",
+    cursor: "default",
+    padding: "0px",
 
     "& .MuiListItemText-primary": {
+      fontWeight: "bold",
+      color: "#666666",
+      fontFamily: "Calibri",
+    },
+    "& .MuiListItemText-secondary": {
       fontStyle: "italic",
+      color: "#666666",
+      fontFamily: "Calibri",
     },
   },
 }));
@@ -109,7 +117,7 @@ export default function RootCategory(props) {
                   const name = Sic2007Codes[sic];
 
                   return (
-                    <ListItem className={classes.childSic2007}>
+                    <ListItem button className={classes.childSic2007}>
                       <ListItemText primary={name} secondary={sic} />
                     </ListItem>
                   );
