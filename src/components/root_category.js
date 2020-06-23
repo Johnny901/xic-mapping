@@ -8,9 +8,9 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   rootXic: {
-    marginTop: 25,
+    marginTop: 5,
     cursor: "pointer",
-    width: "90%",
+    width: "75%",
     border: "1px solid #ddd",
     color: "#666666",
     borderRadius: "2px",
@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
 
   childXic: {
     paddingLeft: theme.spacing(6),
-    width: "90%",
+    width: "75%",
     margin: "auto",
 
     "& .MuiListItemText-root": {
