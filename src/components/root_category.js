@@ -7,6 +7,10 @@ import ExpandMore from "@material-ui/icons/ExpandMore";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
+  reactFrag: {
+    border: "1px solid #ddd",
+  },
+
   rootXic: {
     marginTop: 5,
     cursor: "pointer",
