@@ -115,10 +115,11 @@ export default function RootCategory(props) {
               <List>
                 {_.map(_.get(child, "sic_codes", []), (sic) => {
                   const name = Sic2007Codes[sic];
+                  const sicCode = _.padStart(sic, 5, "0");
 
                   return (
                     <ListItem button className={classes.childSic2007}>
-                      <ListItemText primary={name} secondary={sic} />
+                      <ListItemText primary={name} secondary={sicCode} />
                     </ListItem>
                   );
                 })}
