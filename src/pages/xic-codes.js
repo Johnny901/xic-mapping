@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import _ from 'lodash';
 
 import XicData from '../data/xic-ids.json';
+import Sic2007Codes from '../data/sic_2007_condensed_list_en.json';
 import RootCategory from '../components/root_category';
 
 const useStyles = makeStyles((theme) => ({
@@ -34,6 +35,7 @@ export default function XicCodes() {
                             key={ root.id }
                             root={ root }
                             XicData={ XicData }
+                            Sic2007Codes={ Sic2007Codes }
                         />
                     ))
                 }

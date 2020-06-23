@@ -44,13 +44,20 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "14px",
       marginLeft: "10px",
     },
-  },
+
+    childSic2007: {
+        paddingLeft: theme.spacing(8),
+
+        '& .MuiListItemText-primary': {
+            fontStyle: 'italic'
+        }
+    }
 }));
 
 export default function RootCategory(props) {
   const classes = useStyles();
 
-  const { XicData, root } = props;
+    const { root, XicData, Sic2007Codes } = props;
 
   const [showChildren, setShowChildren] = useState(false);
 
@@ -81,18 +88,39 @@ export default function RootCategory(props) {
         {showChildren ? <ExpandLess /> : <ExpandMore />}
       </ListItem>
 
-      <Collapse in={showChildren} timeout="auto" unmountOnExit>
-        <List component="div" disablePadding>
-          {_.map(sortedChildren(root.id), (child) => (
-            <ListItem button key={child.id} className={classes.childXic}>
-              <ListItemText
-                primary={_.get(child, "name.en", "UNKNOWN")}
-                secondary={_.join(_.get(child, "sic_codes", []), " , ")}
-              />
-            </ListItem>
-          ))}
-        </List>
-      </Collapse>
-    </React.Fragment>
-  );
+            <Collapse in={showChildren} timeout='auto' unmountOnExit>
+                <List component='div' disablePadding>
+                    {
+                        _.map(sortedChildren(root.id), (child) => (
+                            <React.Fragment key={child.id}>
+                                <ListItem className={classes.childXic}>
+                                    <ListItemText
+                                        primary={ _.get(child, 'name.en', 'UNKNOWN') }
+                                        secondary={ `${(_.get(child, 'sic_codes', []).length)} SIC codes` }
+                                    />
+                                </ListItem>
+
+                                <List>
+                                    {
+                                        _.map(_.get(child, 'sic_codes', []), (sic) => {
+                                            const name = Sic2007Codes[sic];
+
+                                            return (
+                                                <ListItem className={classes.childSic2007}>
+                                                    <ListItemText
+                                                        primary={name}
+                                                        secondary={sic}
+                                                    />
+                                                </ListItem>
+                                            )
+                                        })
+                                    }
+                                </List>
+                            </React.Fragment>
+                        ))
+                    }
+                </List>
+            </Collapse>
+        </React.Fragment>
+    )
 }
