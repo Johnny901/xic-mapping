@@ -5,6 +5,16 @@ import _ from "lodash";
 import ExpandLess from "@material-ui/icons/ExpandLess";
 import ExpandMore from "@material-ui/icons/ExpandMore";
 import { makeStyles } from "@material-ui/core/styles";
+import { withStyles } from "@material-ui/core/styles";
+import Tooltip from "@material-ui/core/Tooltip";
+import Button from "@material-ui/core/Button";
+
+const TextOnlyTooltip = withStyles({
+  tooltip: {
+    color: "black",
+    backgroundColor: "transparent",
+  },
+})(Tooltip);
 
 const useStyles = makeStyles((theme) => ({
   reactFrag: {
@@ -82,6 +92,10 @@ export default function RootCategory(props) {
     });
   };
 
+  const matchingParent = _.filter(XicData, (xic) => {
+    return _.get(xic.id === XicData.parent_ids);
+  });
+
   const sortedChildren = (parentID) => {
     return _.sortBy(childrenFor(parentID), [
       (xic) => {
@@ -124,6 +138,9 @@ export default function RootCategory(props) {
                   return (
                     <ListItem button className={classes.childSic2007}>
                       <ListItemText primary={name} secondary={sicCode} />
+                      <TextOnlyTooltip title="parents">
+                        <Button>{matchingParent}</Button>
+                      </TextOnlyTooltip>
                     </ListItem>
                   );
                 })}
