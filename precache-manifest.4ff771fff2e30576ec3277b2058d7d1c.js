@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5bd4f23323cb6fe96133e624b8224a42",
+    "revision": "1446440a585fb6ba25d133883256ed67",
     "url": "/Johnny901/xic-mapping/index.html"
   },
   {
