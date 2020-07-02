@@ -1,6 +1,6 @@
 {
   "homepage": "https://johnny901.github.io/xic-mapping",
-  "name": "xic-mapping-react",
+  "name": "xic-mapping",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
