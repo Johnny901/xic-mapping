@@ -9,7 +9,6 @@ function App() {
       <h1>XIC Mapping appjs1</h1>
 
       <Router>
-        <Link to="/xic-codes">XIC codes</Link>
         <Routes />
       </Router>
     </div>
