@@ -1,4 +1,5 @@
 {
+  "homepage": "https://github.com/Johnny901/xic-mapping",
   "name": "xic-mapping-react",
   "version": "0.1.0",
   "private": true,
@@ -12,6 +13,7 @@
     "axios": "^0.19.2",
     "devour-client": "^2.1.0",
     "formik": "^2.1.4",
+    "gh-pages": "^3.1.0",
     "lodash": "^4.17.15",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -21,6 +23,8 @@
     "yup": "^0.29.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
