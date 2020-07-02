@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 import Routes from "./routes";
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
       <h1>XIC Mapping appjs</h1>
 
       <Router>
+        <Link to="/xic-codes">XIC codes</Link>
         <Routes />
       </Router>
     </div>
