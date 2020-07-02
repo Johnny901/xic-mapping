@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Johnny901/xic-mapping/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/Johnny901/xic-mapping/static/js/main.4bcda1e7.chunk.js",
-    "main.js.map": "/Johnny901/xic-mapping/static/js/main.4bcda1e7.chunk.js.map",
-    "runtime-main.js": "/Johnny901/xic-mapping/static/js/runtime-main.4e03a9c9.js",
-    "runtime-main.js.map": "/Johnny901/xic-mapping/static/js/runtime-main.4e03a9c9.js.map",
-    "static/js/2.fa045bf5.chunk.js": "/Johnny901/xic-mapping/static/js/2.fa045bf5.chunk.js",
-    "static/js/2.fa045bf5.chunk.js.map": "/Johnny901/xic-mapping/static/js/2.fa045bf5.chunk.js.map",
-    "index.html": "/Johnny901/xic-mapping/index.html",
-    "precache-manifest.e96ba94ac67e57d6ebac2eaff0a7c284.js": "/Johnny901/xic-mapping/precache-manifest.e96ba94ac67e57d6ebac2eaff0a7c284.js",
-    "service-worker.js": "/Johnny901/xic-mapping/service-worker.js",
-    "static/css/main.5ecd60fb.chunk.css.map": "/Johnny901/xic-mapping/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.fa045bf5.chunk.js.LICENSE.txt": "/Johnny901/xic-mapping/static/js/2.fa045bf5.chunk.js.LICENSE.txt"
+    "main.css": "/xic-mapping/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/xic-mapping/static/js/main.35e93794.chunk.js",
+    "main.js.map": "/xic-mapping/static/js/main.35e93794.chunk.js.map",
+    "runtime-main.js": "/xic-mapping/static/js/runtime-main.14e09f11.js",
+    "runtime-main.js.map": "/xic-mapping/static/js/runtime-main.14e09f11.js.map",
+    "static/js/2.fa045bf5.chunk.js": "/xic-mapping/static/js/2.fa045bf5.chunk.js",
+    "static/js/2.fa045bf5.chunk.js.map": "/xic-mapping/static/js/2.fa045bf5.chunk.js.map",
+    "index.html": "/xic-mapping/index.html",
+    "precache-manifest.1d845613807606bbfa3448abf42820de.js": "/xic-mapping/precache-manifest.1d845613807606bbfa3448abf42820de.js",
+    "service-worker.js": "/xic-mapping/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/xic-mapping/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.fa045bf5.chunk.js.LICENSE.txt": "/xic-mapping/static/js/2.fa045bf5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.4e03a9c9.js",
+    "static/js/runtime-main.14e09f11.js",
     "static/js/2.fa045bf5.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.4bcda1e7.chunk.js"
+    "static/js/main.35e93794.chunk.js"
   ]
 }
