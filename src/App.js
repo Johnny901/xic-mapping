@@ -6,7 +6,7 @@ import Routes from "./routes";
 function App() {
   return (
     <div>
-      <h1>XIC Mapping appjs</h1>
+      <h1>XIC Mapping appjs1</h1>
 
       <Router>
         <Link to="/xic-codes">XIC codes</Link>
