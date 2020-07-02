@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Johnny901/xic-mapping/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/Johnny901/xic-mapping/static/js/main.e5ce52b6.chunk.js",
-    "main.js.map": "/Johnny901/xic-mapping/static/js/main.e5ce52b6.chunk.js.map",
+    "main.js": "/Johnny901/xic-mapping/static/js/main.4bcda1e7.chunk.js",
+    "main.js.map": "/Johnny901/xic-mapping/static/js/main.4bcda1e7.chunk.js.map",
     "runtime-main.js": "/Johnny901/xic-mapping/static/js/runtime-main.4e03a9c9.js",
     "runtime-main.js.map": "/Johnny901/xic-mapping/static/js/runtime-main.4e03a9c9.js.map",
     "static/js/2.fa045bf5.chunk.js": "/Johnny901/xic-mapping/static/js/2.fa045bf5.chunk.js",
     "static/js/2.fa045bf5.chunk.js.map": "/Johnny901/xic-mapping/static/js/2.fa045bf5.chunk.js.map",
     "index.html": "/Johnny901/xic-mapping/index.html",
-    "precache-manifest.4ff771fff2e30576ec3277b2058d7d1c.js": "/Johnny901/xic-mapping/precache-manifest.4ff771fff2e30576ec3277b2058d7d1c.js",
+    "precache-manifest.e96ba94ac67e57d6ebac2eaff0a7c284.js": "/Johnny901/xic-mapping/precache-manifest.e96ba94ac67e57d6ebac2eaff0a7c284.js",
     "service-worker.js": "/Johnny901/xic-mapping/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/Johnny901/xic-mapping/static/css/main.5ecd60fb.chunk.css.map",
     "static/js/2.fa045bf5.chunk.js.LICENSE.txt": "/Johnny901/xic-mapping/static/js/2.fa045bf5.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.4e03a9c9.js",
     "static/js/2.fa045bf5.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.e5ce52b6.chunk.js"
+    "static/js/main.4bcda1e7.chunk.js"
   ]
 }
