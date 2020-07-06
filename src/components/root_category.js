@@ -9,6 +9,27 @@ import { withStyles } from "@material-ui/core/styles";
 import Tooltip from "@material-ui/core/Tooltip";
 import Button from "@material-ui/core/Button";
 
+// mongoDB setup
+const express = require("express");
+const mongoose = require("mongoose");
+const bodyParser = require("body-parser");
+
+const app = express();
+
+mongoose.Promise = global.Promise;
+mongoose.connect(
+  process.env.MONGODB_URI || `mongodb://localhost:3000/xic-mapping`
+);
+
+app.use(bodyParser.json());
+
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`app running on port ${PORT}`);
+});
+
+// end mongoDb setup
+
 const TextOnlyTooltip = withStyles({
   tooltip: {
     color: "black",
